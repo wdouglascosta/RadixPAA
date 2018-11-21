@@ -17,7 +17,7 @@ public class Radix {
     public static Integer[] sortRadix(Integer[] A, int d) {
         Parametro = new Integer[A.length];
 
-        for (int i = (d - 1); i >= 0; i--) {
+        for (int i = (d); i >= 0; i--) {
             System.out.println("---- RADIX ----");
             for (int j = 0; j < A.length; j++) {
                 String valor = insereZeroAEsquerda(A[j], d);
