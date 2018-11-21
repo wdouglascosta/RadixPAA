@@ -17,12 +17,12 @@ public class Radix {
     public static Integer[] sortRadix(Integer[] A, int d) {
         Parametro = new Integer[A.length];
 
+
         for (int i = (d); i >= 0; i--) {
-            System.out.println("---- RADIX ----");
             for (int j = 0; j < A.length; j++) {
                 String valor = insereZeroAEsquerda(A[j], d);
                 Parametro[j] = Integer.parseInt(Character.toString(valor.charAt(i)));
-                System.out.println("Digito da coluna " + i + 1 + " : " + Parametro[j]);
+//                System.out.println("Digito da coluna " + i + 1 + " : " + Parametro[j]);
             }
             A = counting.sortCounting(Parametro, A);
         }

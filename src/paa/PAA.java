@@ -32,10 +32,11 @@ public class PAA {
 //            System.out.println("Posicao "+i +": " );
 //            A[i] = leitor.nextInt();
 //        }
+        System.out.println("---- RADIX ----");
         Integer[] entrada = AppValues.getVetor(); // pega o vetor passado na função
         int a = ArvoreBusca.buscaMaior(entrada);
 
-        System.out.println("o maior numero do vetor: " + a);
+        System.out.println("o maior número do vetor: " + a);
 
         String as = String.valueOf(a); // essa variável é só pra saber quantos digitos tem o maior elemento
 
